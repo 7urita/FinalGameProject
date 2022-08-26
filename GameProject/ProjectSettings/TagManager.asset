@@ -5,8 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - MunitionBox
   - GunAmmo
+  - MedBox
+  - Munition
+  - Floor
+  - Powerups
+  - Munitions
   layers:
   - Default
   - TransparentFX

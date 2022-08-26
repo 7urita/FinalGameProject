@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637967843371574955
+      ticks: 637968982870000000
     m_Hash: 1071124706
   m_LockFileStatus:
     m_FilePath: C:/Users/luisz/OneDrive/Escritorio/FinalProject/GameProject/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637967843790414552
+      ticks: 637968982870000000
     m_Hash: 2593603777
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -2998,6 +2998,7 @@ m_ResolvedPackages:
     - 1.2.0-exp.5
     - 1.2.0-exp.6
     - 1.2.0-exp.7
+    - 1.2.0
     compatible:
     - 1.0.1
     - 1.1.0
@@ -3009,6 +3010,7 @@ m_ResolvedPackages:
     - 1.2.0-exp.5
     - 1.2.0-exp.6
     - 1.2.0-exp.7
+    - 1.2.0
     verified: 1.0.1
   dependencies:
   - name: com.unity.test-framework
