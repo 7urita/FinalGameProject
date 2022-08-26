@@ -11,6 +11,7 @@ TagManager:
   - Floor
   - Powerups
   - Munitions
+  - Trampoline
   layers:
   - Default
   - TransparentFX

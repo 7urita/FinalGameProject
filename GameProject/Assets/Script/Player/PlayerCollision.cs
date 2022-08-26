@@ -55,6 +55,19 @@ public class PlayerCollision : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
+        if (other.gameObject.CompareTag("Trampoline"))
+        {
+            /*
+             Cambio de velocidad instantáneo (ForceMode.VelocityChange)
+             Aqui la fuerza se traduce en un cambio de velocidad,
+             por lo cual el movimiento se altera significantemente.
+             El cálculo Vector3.up + Vector3.forward permite al
+             aplicar fuerza en "diagonal"(hacia arriba y adelante)
+            */
+            //forward,back,righ,left,up,down//
+            playerMove.MyRigidbody.AddForce((Vector3.up) * playerMove.MaxSpeed * 2f, ForceMode.VelocityChange);
+        }
+
         if (other.gameObject.CompareTag("GunAmmo"))
         {
             GameManager.instance.gunAmmo += other.gameObject.GetComponent<AmmoBox>().ammo;
