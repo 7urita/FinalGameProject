@@ -12,6 +12,7 @@ TagManager:
   - Powerups
   - Munitions
   - Trampoline
+  - Weapons
   layers:
   - Default
   - TransparentFX

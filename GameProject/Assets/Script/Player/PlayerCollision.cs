@@ -7,6 +7,8 @@ public class PlayerCollision : MonoBehaviour
     private PlayerData playerData;
     private PlayerMoveForce playerMove;
 
+    [SerializeField] WeaponsManager weaponManager;
+
     private void Start()
     {
         playerData = GetComponent<PlayerData>();
@@ -66,6 +68,25 @@ public class PlayerCollision : MonoBehaviour
             */
             //forward,back,righ,left,up,down//
             playerMove.MyRigidbody.AddForce((Vector3.up) * playerMove.MaxSpeed * 2f, ForceMode.VelocityChange);
+        }
+
+        if (other.gameObject.CompareTag("Weapons"))
+        {
+            // AGREGAR EL ARMA A LA LISTA DE ARMAS
+            other.gameObject.SetActive(false);
+            weaponManager.WeaponList.Add(other.gameObject);
+            //COLA
+            weaponManager.WeaponQueue.Enqueue(other.gameObject);
+            Debug.Log("ELEMENTOS EN LA COLA " + weaponManager.WeaponQueue.Count);
+            //STACK
+            weaponManager.WeaponStack.Push(other.gameObject);
+            Debug.Log("ELEMENTOS EN LA STACK " + weaponManager.WeaponStack.Count);
+            //DIC
+            if (!weaponManager.WeaponDirectory.ContainsKey(other.gameObject.name))
+            {
+                weaponManager.WeaponDirectory.Add(other.gameObject.name, other.gameObject);
+                Debug.Log(weaponManager.WeaponDirectory[other.gameObject.name]);
+            }
         }
 
         if (other.gameObject.CompareTag("GunAmmo"))
