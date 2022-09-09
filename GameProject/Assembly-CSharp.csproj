@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\Player\PlayerData.cs" />
+     <Compile Include="Assets\Script\Manager\CameraManager.cs" />
      <Compile Include="Assets\Script\Manager\CannonManager.cs" />
      <Compile Include="Assets\Script\Data\Munition.cs" />
      <Compile Include="Assets\Script\Data\MedBox.cs" />
@@ -44,11 +45,10 @@
      <Compile Include="Assets\Script\Player\PlayerMoveForce.cs" />
      <Compile Include="Assets\Script\Generic\MoveForward.cs" />
      <Compile Include="Assets\Script\Player\PlayerShoot.cs" />
-     <Compile Include="Assets\Script\Player\PlayerCollision.cs" />
-     <Compile Include="Assets\Script\Manager\GameManager.cs" />
-     <Compile Include="Assets\Script\Manager\CameraManager.cs" />
      <Compile Include="Assets\Script\Manager\WeaponsManager.cs" />
+     <Compile Include="Assets\Script\Player\PlayerCollision.cs" />
      <Compile Include="Assets\Script\Enemy\Enemy.cs" />
+     <Compile Include="Assets\Script\Manager\GameManager.cs" />
      <None Include="Assets\Materials\Materials\Double Sided Standard Diffuse Bump.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\2021.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour
     
     public int gunAmmo = 8;
 
+    public Text healtText;
+
+    public int healt = 10;
+
     private void Awake()
     {
         Debug.Log("EJECUTANDO AWAKE");
@@ -37,6 +41,8 @@ public class GameManager : MonoBehaviour
     private void update()
     {
         ammoText.text = gunAmmo.ToString();
+        healtText.text = healt.ToString();
     }
+
     
 }
